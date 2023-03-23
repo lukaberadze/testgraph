@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="modernizr.js"></script>
+    <title>test graph</title>
+    <style>
+        * {
+            user-select: none;
+        }
+        body {
+            background: rgb(210, 249, 250);
+        }
+        #col {
+            top: 6px;
+            width: 80px;
+            cursor: pointer;
+        }
+        input {
+            cursor: pointer;
+        }
+        h1 {
+            font-family: fantasy;
+            font-weight: 400;
+            color: saddlebrown;
+        }
+        #submit, #reset_grid {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .c {
+            font-family: monospace;
+            font-weight: 800;
+            position: absolute;
+            bottom: 10px;
+            left: 50%; 
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+        <h1>testgraph</h1>
+        <span id="status_message"></span><br>
+        <canvas id="canvas" width="400" height="400">
+          Your browser does not support the HTML 5 Canvas. 
+        </canvas>
+        <form>
+          <input type="number" name="numin" id="numin">
+          <input type="button" id="submit" value="დახაზვა"/>
+          <input type="button" id="reset_grid" value="გასუფთავება"/>
+          <select name="color" id="col">
+            <option disabled selected="">ფერი</option>
+            <option value="blue" style="color: blue;">ლურჯი</option>
+            <option value="yellow" style="color: yellow;">ყვითელი</option>
+            <option value="green" style="color: green;">მწვანე</option>
+            <option value="orange" style="color: orange;">ნარინჯისფერი</option>
+            <option value="purple" style="color: purple;">იისფერი</option>
+          </select>
+        </form>
+      </div>
+    </center>
+<div class="c">Luka Beradze</div>
+</body>
+</html>
