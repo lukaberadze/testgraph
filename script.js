@@ -23,7 +23,7 @@ reset_grid_button.addEventListener('click', reset_grid_buttonPressed, false)
 
 var numin = document.getElementById("numin") 
 numin.addEventListener('change', () => {
-    coef = Math.round(numin.value) 
+    coef = numin.value 
 })
 
 var col = document.getElementById("col") 
